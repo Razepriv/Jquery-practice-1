@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery-3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <style>
+    body{
+        text-align: center;
+        margin: auto;
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    .btn1 {
+      background-color: grey;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .btn2 {
+      background-color: green;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .btn3 {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }   
+    .btn4 {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }  
+    input{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+  </style>
+  <body>
+    <h1>Hello people</h1>
+    <img src="pexelsphoto1471751 (1).png" alt="img of laptop" /> <br> <br>
+    <button class="btn1">Hide/Show</button> <br> <br>
+    <button class="btn2">slideup</button> <br>
+
+    <h1>Hello people, hiiee!!</h1>
+    <p style="line-height: 30px;">
+      Many users already have downloaded jQuery from Google when visiting
+      another site. As a result, it will be loaded from cache when they visit <br>
+      your site, which leads to faster loading time. Also, most CDN's will make
+      sure that once a user requests a file from it, it will be served from the <br>
+      server closest to them, which also leads to faster loading time.
+    </p>
+    <button class="btn3">fadeout</button>
+    <br>
+    <br>
+    <form action="">
+        <input type="text" placeholder="Enter Your Name" class="fname"> <br> <br>
+        <input type="email" placeholder="Enter your Valid Email Id" class="email"> <br> <br>
+        <button type="submit" class="btn4">submit</button> <br> <br>
+
+    </form>
+    
+
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".btn1").click(function () {
+        $("img").toggle();
+      });
+      $(".btn2").click(function () {
+        $("img").slideUp();
+      });
+      $(".btn3").click(function () {
+        $("p").fadeOut();
+      });
+        $(".btn4").click(function () {
+            alert("Your Details is Saved Successfully");
+        });
+
+    });
+  </script>
+</html>
